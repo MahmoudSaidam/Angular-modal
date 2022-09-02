@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row my-3">
+        <div class="col-md-12">
+            <h2 class="Title-table">
+                user information
+                <a (click)="BackToHome()" class="btn btn-add-user  ">
+                  Back
+                  <i class="fas fa-undo px-1"></i>
+                </a>
+
+            </h2>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-6">
+            <div>
+                <table class="table table-bordered">
+                    <thead class="black white-text">
+                        <tr>
+                            <th>#</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngIf="userdetails">
+                        <tr>
+                            <th>Full name</th>
+                            <td>{{ userdetails.name.firstname }} {{userdetails.name.lastname }}</td>
+                        </tr>
+                        <tr>
+                            <th>birthdate</th>
+                            <td>{{ userdetails.birthdate }}</td>
+                        </tr>
+                        <tr>
+                            <th>email</th>
+                            <td>{{ userdetails.email}}</td>
+                        </tr>
+                        <tr>
+                            <th>phone</th>
+                            <td>{{ userdetails.phone }}</td>
+                        </tr>
+                        <tr>
+                            <th>address</th>
+                            <td>{{ userdetails.address }}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+</div>

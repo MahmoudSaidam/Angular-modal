@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #f6f6f6!important;
+}
+
+.required:after {
+    content: "*";
+    position: relative;
+    font-size: inherit;
+    color: #F1416C;
+    padding-right: 0.25rem;
+    font-weight: bold;
+}
